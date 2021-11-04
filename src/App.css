@@ -1,38 +1,57 @@
-.App {
+@font-face {
+  font-family: "Hodor";
+  src        : url("./fonts/Hodor.ttf");
+}
+
+#root {
+  display              : flex;
+  flex-direction       : row;
+  flex-wrap            : wrap;
+  justify-content      : center;
+  background-image     : url(https://fr.web.img5.acsta.net/newsv7/17/07/21/17/38/332373.jpg);
+  background-repeat    : no-repeat;
+  background-size      : 100% 100%;
+  background-attachment: fixed;
+}
+
+.thrones {
+  display  : flex;
+  flex-wrap: wrap;
+  width    : 70%;
+}
+
+.flex {
+  display       : flex;
+  flex-direction: column;
+  width         : 30%;
+  align-items   : center;
+  color         : white;
+}
+
+.titre {
+  display        : flex;
+  width          : 100%;
+  justify-content: center;
+  font-size      : 50px;
+}
+
+h1 {
+  color     : white;
+  box-shadow: 15px 15px 16px black;
+  font-family: "Hodor";
+  letter-spacing: 1em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin    : 2px 0;
+  box-shadow: 10px 10px 10px black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width        : 200px;
+  height       : 200px;
+  margin       : 20px 20px;
+  box-shadow   : 10px 10px 10px black;
+  border-radius: 3%;
 }
