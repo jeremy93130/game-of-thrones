@@ -25,7 +25,9 @@ class App extends Component {
       });
   }
 
-  handleFavoriteClick() { }
+  handleFavoriteClick(character) {
+    this.setState({ favorites: character.map( favorite =>   ) })
+  }
 
 
   render() {
@@ -36,7 +38,12 @@ class App extends Component {
         </div>
 
         <div className="thrones">
-          {this.state.characters.map(character => (<Character character={character} name={character.fullName} />))}
+          {this.state.characters.map(character =>
+          (<Character
+            character={character}
+            name={character.fullName}
+            favorites={this.handleFavoriteClick}
+          />))}
         </div>
 
 
