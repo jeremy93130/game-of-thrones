@@ -36,16 +36,18 @@
 }
 
 h1 {
-  color     : white;
-  box-shadow: 15px 15px 16px black;
-  font-family: "Hodor";
+  color         : white;
+  box-shadow    : 15px 15px 16px black;
+  font-family   : "Hodor";
   letter-spacing: 1em;
-  text-align: center;
+  text-align    : center;
 }
 
 p {
   margin    : 2px 0;
   box-shadow: 10px 10px 10px black;
+  color: white;
+  text-align: center;
 }
 
 img {
@@ -54,4 +56,19 @@ img {
   margin       : 20px 20px;
   box-shadow   : 10px 10px 10px black;
   border-radius: 3%;
+}
+
+button {
+  margin          : 10px 0;
+  padding         : 5px 10px;
+  border-radius   : 10%;
+  color           : white;
+  background-color: black;
+  font-weight     : bold;
+  justify-content: center;
+}
+
+h2 {
+  color      : white;
+  font-family: "Hodor";
 }
