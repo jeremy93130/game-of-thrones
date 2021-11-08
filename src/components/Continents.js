@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 class Continents extends Component {
     constructor() {
         super()
+
+        this.state = {
+            continents: []
+        }
     }
 
     componentDidMount() {
@@ -15,9 +19,15 @@ class Continents extends Component {
             });
     }
     render() {
+        const { continents } = this.state
         return (
             <div>
-
+                {continents.map(continent => (
+                    <div className="flex">
+                        <p>{continent.name}</p>
+                    
+                    </div>
+                ))}
             </div>
         );
     }

@@ -3,19 +3,18 @@ import React, { Component } from 'react';
 class Character extends Component {
     render() {
         // const { fullName, imageUrl } = this.props.character
-        const { character, favorites, name, image, title } = this.props
+        const { characters, favorites, name, image, title } = this.props
         // const { personnage, photo } = this.props.favorite
         return (
-            <>
-                <div className="flex">
-                    <img src={image} />
-                    <p> {name}</p>
-                    <p> {title}</p>
-                    <button type="button" onClick={() => favorites(character)}>Favoris</button>
-                </div>
-
-
-            </>
+            <div className="thrones">
+                {characters.map((character, index) =>
+                (<div className="flex">
+                    <img src={character.imageUrl} />
+                    <p> {character.name}</p>
+                    <p> {character.title}</p>
+                    <button type="button" onClick={() => this.props.handleFavoriteClick(character)}>Favoris</button>
+                </div>))}
+            </div>
         );
     }
 }
